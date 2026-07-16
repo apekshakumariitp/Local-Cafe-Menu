@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Benne n Brew is a local café serving freshly brewed coffee, sandwiches, burgers, desserts, and refreshing beverages.">
+    <title>Benne n Brew |Local Cafe Menu</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>☕ Benne n Brew</h1>
+    </header>
+
+    <main>
+
+        <form class="search-form">
+            <label for="search" class="sr-only">Search Menu</label>
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search Menu..."
+                aria-label="Search Menu"
+                required
+            >
+
+            <button
+                type="submit"
+                aria-label="Search Menu">
+                Search
+            </button>
+        </form>
+
+      
+        <div class="loading" id="loading" aria-live="polite">
+            ☕ Loading Menu...
+        </div>
+
+       
+        <div class="empty-state" aria-live="polite">
+            No menu items found.
+        </div>
+      <div id="network-status" class="network-status" hidden>
+    ⚠️ You are offline. Showing the available menu.
+</div>
+      
+        <section class="grid-container">
+
+            <article class="box">
+                <h2>Cappuccino</h2>
+                <p>Fresh espresso blended with creamy steamed milk and rich foam.</p>
+                <span>₹180</span>
+            </article>
+
+            <article class="box">
+                <h2>Latte</h2>
+                <p>A rich and creamy latte with a smooth finish.</p>
+                <span>₹200</span>
+            </article>
+
+            <article class="box">
+                <h2>Mocha</h2>
+                <p>Smooth coffee infused with rich chocolate flavor.</p>
+                <span>₹220</span>
+            </article>
+
+            <article class="box">
+                <h2>Cold Coffee</h2>
+                <p>Refreshing iced coffee topped with creamy vanilla ice cream.</p>
+                <span>₹250</span>
+            </article>
+
+            <article class="box">
+                <h2>Veg Sandwich</h2>
+                <p>Grilled sandwich filled with fresh vegetables and melted cheese.</p>
+                <span>₹150</span>
+            </article>
+
+            <article class="box">
+                <h2>Classic Burger</h2>
+                <p>Juicy burger served with crispy lettuce, cheese, and fries.</p>
+                <span>₹280</span>
+            </article>
+
+            <article class="box">
+                <h2>French Fries</h2>
+                <p>Golden, crispy potato fries served with tomato ketchup.</p>
+                <span>₹120</span>
+            </article>
+
+            <article class="box">
+                <h2>Chocolate Brownie</h2>
+                <p>Warm chocolate brownie served with a scoop of vanilla ice cream.</p>
+                <span>₹180</span>
+            </article>
+
+            <article class="box">
+                <h2>Cheesecake</h2>
+                <p>Creamy baked cheesecake with a delicious berry topping.</p>
+                <span>₹240</span>
+            </article>
+
+        </section>
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
